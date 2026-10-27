@@ -1,0 +1,29 @@
+{
+  "name": "moon-knight-experience",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An immersive, cinematic Moon Knight WebGL scroll experience built with Three.js, GSAP and Vite.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compress": "node scripts/compress-models.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "lil-gui": "^0.20.0",
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "^4.1.1",
+    "@gltf-transform/core": "^4.1.1",
+    "@gltf-transform/extensions": "^4.1.1",
+    "@gltf-transform/functions": "^4.1.1",
+    "draco3dgltf": "^1.5.7",
+    "meshoptimizer": "^0.22.0",
+    "playwright": "^1.61.1",
+    "sharp": "^0.33.5",
+    "vite": "^6.0.0"
+  }
+}

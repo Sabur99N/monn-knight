@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/mini-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#05060a" />
+    <meta name="description"
+        content="An immersive cinematic WebGL journey into the world of Moon Knight — the Fist of Khonshu." />
+    <title>Moon Knight — Fist of Khonshu</title>
+</head>
+
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <canvas class="webgl"></canvas>
+
+    <div id="preloader" class="loading-screen">
+        <div class="loading-content">
+            <div class="moon-knight-logo">
+                <img src="/images/mini-logo.png" alt="Moon Knight emblem" />
+            </div>
+            <div class="loading-text">Summoning the Fist of Khonshu… 0%</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="/images/logo.png" alt="Moon Knight" />
+        </a>
+    </header>
+
+    <div class="scroll-hint">Scroll to descend</div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section class="section-one">
+                <img src="/images/logo-2.png" alt="Moon Knight" class="intro-logo" />
+            </section>
+
+            <section class="section-two">
+                <div class="stage-caption top">
+                    <div class="eyebrow">Chapter I</div>
+                    <h2>A weapon falls from the night sky</h2>
+                </div>
+            </section>
+
+            <section class="section-three">
+                <div class="stage-caption">
+                    <div class="eyebrow">The Crescent Dart</div>
+                    <h2>Forged in moonlight, guided by a god</h2>
+                </div>
+            </section>
+
+            <section class="section-four"></section>
+
+            <section class="section-five">
+                <div class="stage-caption top">
+                    <div class="eyebrow">Chapter II</div>
+                    <h2>The Knight awakens</h2>
+                </div>
+            </section>
+
+            <section class="section-six common-sections">
+                <div class="content">
+                    <div class="eyebrow">The Moon Rises</div>
+                    <h2>The Moon Rises</h2>
+                    <p>The city sleeps. The shadows stir. Under the moon's glow, a guardian awakens — a force cloaked
+                        in mystery and vengeance.</p>
+                </div>
+                <img src="/images/banner.jpeg" alt="Moon Knight in the night" class="section-img" />
+            </section>
+
+            <section class="section-seven common-sections">
+                <img src="/images/mark-spector.jpg" alt="Marc Spector" class="section-img" />
+                <div class="content">
+                    <div class="eyebrow">Marc Spector</div>
+                    <h2>The Man Behind the Mask</h2>
+                    <p>Before the mask, he was Marc Spector — a soldier, a mercenary, a man betrayed. Left for dead
+                        beneath the desert sun… only to rise again.</p>
+                </div>
+            </section>
+
+            <section class="section-eight common-sections">
+                <div class="content">
+                    <div class="eyebrow">Khonshu's Vow</div>
+                    <h2>Chosen by the Moon God</h2>
+                    <p>Resurrected by Khonshu, the ancient god of the moon, Marc is reborn as Moon Knight — protector
+                        of the travelers of night.</p>
+                </div>
+                <img src="/images/khonshu.jpg" alt="Khonshu" class="section-img" />
+            </section>
+
+            <section class="section-nine common-sections">
+                <img src="/images/variants.png" alt="The system's alters" class="section-img" />
+                <div class="content">
+                    <div class="eyebrow">The System</div>
+                    <h2>One Body. Many Lives.</h2>
+                    <p>Steven. Marc. Jake. A mind splintered into three. Each face brings a different strength — and a
+                        different struggle.</p>
+                </div>
+            </section>
+
+            <section class="section-ten common-sections">
+                <div class="content">
+                    <div class="eyebrow">Gods of Egypt</div>
+                    <h2>When Gods Walk Among Men</h2>
+                    <p>Not all gods stay silent. In the shadows of Cairo, ancient powers wage war. Ammit rises.
+                        Balance is broken.</p>
+                </div>
+                <img src="/images/khonsu-ammit.jpg" alt="Khonshu and Ammit" class="section-img" />
+            </section>
+
+            <section class="section-eleven common-sections">
+                <img src="/images/last.jpg" alt="Moon Knight" class="section-img" />
+                <div class="content">
+                    <div class="eyebrow">Justice Incarnate</div>
+                    <h2>Embrace the Knight</h2>
+                    <p>Bound by duty, broken by fate. Moon Knight is not a hero. He is justice — raw, violent,
+                        relentless.</p>
+                </div>
+            </section>
+
+            <section class="section-tweleve">
+                <div class="stage-caption top">
+                    <div class="eyebrow">Chapter III</div>
+                    <h2>Vengeance takes shape</h2>
+                </div>
+            </section>
+
+            <section class="section-thirteen"></section>
+
+            <section class="section-fourteen">
+                <div class="stage-caption">
+                    <div class="eyebrow">The Suit of Khonshu</div>
+                    <h2>Wrapped in the wings of the moon</h2>
+                </div>
+            </section>
+
+            <section class="section-fifteen"></section>
+
+            <section class="section-sixteen">
+                <div class="stage-caption top">
+                    <div class="eyebrow">The Fist of Khonshu</div>
+                    <h2>Behold the Moon Knight</h2>
+                </div>
+            </section>
+
+            <section class="section-seventeen"></section>
+
+            <section class="section-outro">
+                <div class="eyebrow" style="font-family:'Orbitron',sans-serif;letter-spacing:.4em;color:var(--gold)">
+                    End of Transmission</div>
+                <h2>We serve the Moon</h2>
+                <p style="max-width:620px">Whenever the wicked prey on the travelers of the night, the Fist of
+                    Khonshu will be there to deliver his justice.</p>
+                <div class="credit">A WebGL experience · Three.js · GSAP</div>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
